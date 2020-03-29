@@ -22,12 +22,13 @@ export class TimerComponent implements OnInit {
 
   resetTimer(): void {
     this.isPaused = true;
-    this.minutes = 24;
+    this.minutes = 40;
     this.seconds = 59;
     this.buttonLabel = 'Start';
   }
 
   private tick(): void {
+    audio = new Audio();
     if (!this.isPaused) {
       this.buttonLabel = 'Pause';
 
