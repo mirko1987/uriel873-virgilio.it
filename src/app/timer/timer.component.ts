@@ -28,7 +28,6 @@ export class TimerComponent implements OnInit {
   }
 
   private tick(): void {
-    audio = new Audio();
     if (!this.isPaused) {
       this.buttonLabel = 'Pause';
 
